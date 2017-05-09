@@ -17,12 +17,15 @@ RSpec.describe StudentsController, type: :controller do
 	end
 
 	describe 'GET#show' do
-		it "shi=old dispaly the student" do
+		it "should dispaly the student" do
 			@student = Student.create(id: '1',name: "Reshmi")
 			student = Student.find(@student.id)
 			expect(student).to be_valid
 
 		end
 	end
+
+	describe 'PUT#destroy' do
+		
 
 end
