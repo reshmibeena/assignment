@@ -1,0 +1,13 @@
+<h1> In the show </h1>
+<table border = 1>
+	<tr>
+		<td>Name</td>
+	</tr>
+	<tr>
+		<td><%= @student.name %>
+		</td>
+	</tr>
+
+<tr><td><%= link_to 'back', new_user_path %></td></tr>
+<tr><td><%= link_to 'delete',student_path,method: :delete,:remote => true,:class => 'delete_stud',data: {confirm: "Are you sure ???"} %></td></tr>
+</table>
