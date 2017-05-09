@@ -17,7 +17,7 @@ class StudentsController < ApplicationController
 	def destroy
 		@student = Student.find(params[:id])
 		if @student.destroy
-			flash[:notice] = "Student removed"
+			flash[:notice] = "Student removed from list"
 		else
 			flash[:notice] = "Student not saved"
 		end
